@@ -1,0 +1,40 @@
+LOPEZ RAVELO DANIEL 
+#15210532
+PWB 4-5
+
+1. Dibuje un arbol con la estructura basica de un proyecto y una aplicación de Django
+I--examen
+I--I-examen
+I----I--__init__.py
+I----I--settings.py
+I----I--urls.py
+I----I--wsgi.py
+
+2. Mencione tres argumentos que gestiona el comando manage.py
+ runserver
+ makemigration
+ migration
+
+3. Explique la diferencia de utilizar urls global y urls local
+  las urls locales son creadas y corridas desde la ubicacion del proyecto y las globales son enlaces que se ejecutan de fuera del proyecto 
+
+4. Escriba un patron de url para una vista basada en funcion
+   def home(exam) return render(exam,"home.html") 
+
+5. Escriba un patron de url para una vista basada en clase
+   class home_view(generic.index_view):template_name=("exam/index.html") model=Exam 
+
+6. Escriba el comando para hacer un proyecto en Django
+   django.admin startproject apptname
+
+7. Escriba el comando para hacer una aplicación en Django
+   django.admin startapp proyectname
+
+8. Mencione para que sirve el archivo Settings.py
+   es el que permite y autoriza las configuraciones del proyecto
+
+9. Escriba el comando para registrar las migraciones de los modelos
+  python manage.py migration  
+
+10. Escriba el comando para sincronizar el modelo con el motor de base de datos.
+  python manage.py makemigration
